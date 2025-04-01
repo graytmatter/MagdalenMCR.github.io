@@ -2,6 +2,7 @@ body, html {
     height: 100%;
     margin: 0px;
     width: 100%;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 
 
@@ -43,7 +44,7 @@ body, html {
         height: 350px; 
     }
     .hero-text {
-        top: 100px;
+        top: 250px;
     }
 }
 
@@ -55,13 +56,20 @@ body, html {
     }
 }
 
-/*************
-  The Banner Canvas
-**************/
+#logo{
+  display: block;
+  margin: auto;
+  padding-top: 56px;
+  width: 75%;
+  aspect-ratio: auto;
+}
 
-#petals {
-    position:absolute;
-    z-index:20;
+
+#term-pdf{
+  display: block;
+  margin: auto;
+  aspect-ratio: auto;
+  width: 100%;
 }
 
 /*****************
@@ -119,265 +127,12 @@ background-color: #111;
     text-align: center;
 }
 
-/*****************
-    Work Cards
-******************/
-
-.card-project {
-    margin: 2% 5%;
-    padding: 8px;
-    box-shadow: 0px 0px 16px rgb(0 0 0 / 20%);
-    /* max-width: 750px; */
-    border: 5px solid white;
-    width: 40%;
-    padding: 10%;
-    box-sizing: border-box;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    float: left;
-}
-
-.card-project-description{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    /* display: none; */
-}
-
-
-.card-project-description h4{
-    margin-top: 0px;
-    margin-bottom: 2px;
-    color:white;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
-.card-project-description p{
-    display: none;
-}
-
-
-#RTC-Image{
-    background-image: url("images/RTC.jpeg");
-}
-
-#MS-Image{
-    background-image: url("images/Aspire\ Talk.jpeg");
-}
-
-#SSRC-Image{
-    background-image: url("images/SSRC.jpeg");
-}
-
-#UCSC-Image{
-    background-image: url("images/BaskinTA.jpeg");
-}
-
-#Sandia-Image{
-    background-image: url("images/Sandia.png");
-}
-
-#LMG-Image{
-    background-image: url("images/LMG.jpeg");
-}
-
-#GA-Image{
-    background-image: url("images/GA.jpeg");
-    margin-bottom: 10px;
-}
-
-.bottom-card{
-    margin: 0% 30%;
-}
-
-.card-project:hover {
-    background-image: none !important;
-    background-color:#fcecf0 !important;
-}
-
-.card-project:hover .card-project-description h4{
-    text-shadow: none;
-    color: black;
-}
-
-
-.card-project:hover .card-project-description p{
-    display: inline;
-    word-wrap: break-word;
-}
-
-.square-card{
-    padding-bottom: 20%;
-}
-
-@media (max-width: 1100px) {
-    .card-project {
-        margin: 5% 10%;
-        width: 80%;
-        padding: 20%;
-        float: center;
-    }
-    .bottom-card{
-        margin: 5% 10%;
-    }
-    .square-card{
-        padding-bottom: 40%;
-    }
-}
-
-@media (max-width: 550px) {
-    .card-project:hover .card-project-description p.too-long-550{
-        display: none;
-    }
-    .card-project:hover .card-project-description p.short-550{
-        display: inline;
-    }
-}
-
-@media (min-width: 551px) {
-    .card-project:hover .card-project-description p.too-long-550{
-        display: inline;
-    }
-    .card-project:hover .card-project-description p.short-550{
-        display: none;
-    }
-}
-
-/*****************
-  Research Interests
-******************/
-
-
-.interests{
-    text-align: center;
-}
-
-#Venn-Image{
-    background-image: url("images/Venn 2024.png");
-    margin-bottom: 50px;
-    /* background-position: right 0 bottom 0; */
-}
-
-/*****************
-  Research Cards
-******************/
-
-#Quantum-Image{
-    background-image: url("images/Quantum.jpg");
-}
-
-#Coin-Image{
-    background-image: url("images/Coin.jpeg");
-}
-
-#MCSP-Image{
-    background-image: url("images/MCSP.png");
-}
-
-#NVM-Image{
-    background-image: url("images/NVM.png");
-}
-
-#Hash-Image{
-    background-image: url("images/epicyle.jpeg");
-}
-
-#Facial-Image{
-    background-image: url("images/Facial.jpeg");
-}
-
-
-.home-profile {
-    width: 250px;
-    height: 250px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
-    border-radius: 8px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-@media (max-width: 600px) {
-    .research{
-        padding: 30%; 
-    }
-}
-
-/*****************
-      About
-******************/
-
-.p-3{
-    width: 100%;
-    min-height: 250px;
-}
 
 /*****************
   Contact & Footer
 ******************/
 
 .footer{
-    background-color: #d1e9b4;
+    background-color: #ffed92;
     padding: 10px;
 }
-
-
-.fa-stack-1x {
-    color:white;
-}
-
-.icon-container{
-    display: inline-block;
-}
-/* .icon-linkedin{
-    color:#0072b1;
-}
-
-.icon-github{
-    color: #6e5494;
-} */
-
-.fa-stack{
-    color: #453C8D;
-}
-/* .icon-facebook {
-   color:#3b5998;
-}
-
-.icon-twitter {
-    color:#00aced;
-}
-
-.icon-gplus{
-    color:#dd4b39;
-} */
-
-/* .fa {
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    text-align: center;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    font-family: 'Font Awesome 5 Brands';
-    height: 20px;
-}
-
-.social-media-icons{
-    list-style: none;
-}
-
-.icon-link{
-    margin: 0 10%;
-    display: inline;
-}
-
-.icon{
-    position: relative;
-    float: center;
-} */
